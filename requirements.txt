@@ -1,0 +1,4 @@
+langchain
+ffmpeg-python
+pydantic
+langchain-community
