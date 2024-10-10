@@ -3,7 +3,6 @@ services:
     image: ollama/ollama:latest
     volumes:
       - ./models/ollama:/root/.ollama
-      - ./temp-files:/tmp/temp-files
     container_name: ollama
     pull_policy: always
     tty: true

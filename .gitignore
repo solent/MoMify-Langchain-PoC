@@ -1,2 +1,4 @@
 # Ignore models volume folder
 models/
+# Ignore input folder
+input/
