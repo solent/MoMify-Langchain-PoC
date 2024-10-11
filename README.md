@@ -40,7 +40,14 @@ docker exec -it ollama ollama pull mistral
 docker exec -it ollama ollama pull llama3.2
 ```
 
-## Example
+## Run
+
+Use this command
+```
+poetry run streamlit run app.py
+```
+
+## Examples
 
 The example is a simple translator and shows how to use LangChain + LangServe with Ollama.
 You can run it through `poetry run python example.py` 
