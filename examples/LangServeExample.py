@@ -20,19 +20,18 @@ You're an experienced translator.
 Translate the following into {language}.
 Does not output anything else than the translated text. Here is the text to translate:"""
 
-prompt_template = ChatPromptTemplate.from_messages([
-    ('system', system_template),
-    ('human', '{input}')
-])
+prompt_template = ChatPromptTemplate.from_messages(
+    [("system", system_template), ("human", "{input}")]
+)
 
 # Create the chain
 chain = prompt_template | model | parser
 
 # App definition
 app = FastAPI(
-title="LangChain Translator Example",
-version="1.0",
-description="A simple API server using LangChain's runnable interfaces",
+    title="LangChain Translator Example",
+    version="1.0",
+    description="A simple API server using LangChain's runnable interfaces",
 )
 
 # Adding chain route
@@ -44,4 +43,5 @@ add_routes(
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(app, host="localhost", port=8000)

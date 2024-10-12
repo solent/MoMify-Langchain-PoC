@@ -1,7 +1,24 @@
+# Ignore env file
+.env
+
 # Ignore models volume folder
 models/
-# Ignore uploaded_files folder
-uploaded_files/
+
+# Exclude common video file formats
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+*.webm
+*.m4v
+*.mpeg
+*.mpg
+*.3gp
+*.ogv
+*.ts
+*.m2ts
 
 ### Python ###
 # Byte-compiled / optimized / DLL files

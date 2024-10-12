@@ -6,8 +6,8 @@ from langchain_community.document_loaders.parsers.audio import OpenAIWhisperPars
 
 loader = GenericLoader(
     FileSystemBlobLoader("input/example.wav", show_progress=True),
-    # Lang_model should be a valid model on HugginFace : https://huggingface.co/openai 
-    OpenAIWhisperParserLocal(lang_model="openai/whisper-large-v3-turbo")
+    # Lang_model should be a valid model on HugginFace : https://huggingface.co/openai
+    OpenAIWhisperParserLocal(lang_model="openai/whisper-large-v3-turbo"),
 )
 docs = loader.load()
 
