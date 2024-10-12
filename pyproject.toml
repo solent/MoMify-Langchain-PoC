@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "langchain-transcript"
-description = ""
+name = "MoMify"
+description = "Generates a MoM from a video recording of a meeting."
 authors = ["Thomgram <vui.thomas@gmail.com>"]
 readme = "README.md"
 package-mode = false

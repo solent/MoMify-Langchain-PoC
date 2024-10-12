@@ -42,10 +42,7 @@ docker exec -it ollama ollama pull llama3.2
 
 ## Run
 
-Use this command
-```
-poetry run streamlit run app.py
-```
+Use this command `poetry run streamlit run app.py`
 
 ## Examples
 
